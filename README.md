@@ -1,0 +1,1 @@
+h1. Welcome to Apache Log4j! Learn it from 1.2
