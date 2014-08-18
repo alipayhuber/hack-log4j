@@ -114,11 +114,7 @@
         <include>org/apache/log4j/xml/XMLLayoutTestCase.java</include>
         <include>org/apache/log4j/xml/AsyncAppenderTestCase.java</include>
         <include>org/apache/log4j/varia/LevelMatchFilterTestCase.java</include>
-
-       <!--   ErrorHandlerTestCase is not run in Ant build either
-			<include>org/apache/log4j/varia/ErrorHandlerTestCase.java</include>
-		-->
-       <!-- include>org/apache/log4j/helpers/OptionConverterTestCase.java</include -->
+        
       <include>org/apache/log4j/helpers/BoundedFIFOTestCase.java</include>
       <include>org/apache/log4j/helpers/CyclicBufferTestCase.java</include>
       <include>org/apache/log4j/helpers/PatternParserTestCase.java</include>
@@ -192,14 +188,7 @@
                 </goals>
             </execution>
         </executions>
-      </plugin>     
-      <!--   
-           clirr:check will fail with NullPointerException
-                due to missing javax.jms.MessageListener,
-                however it will trigger download of supporting components
-                which can allow "ant clirr" to succeed.
-                Could possibly run on a JavaEE platform.
-       -->
+      </plugin>   
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>clirr-maven-plugin</artifactId>
@@ -216,15 +205,6 @@
 	</testResources>
 </build>
 <profiles>
-    <profile>
-      <id>mac</id>
-      <activation>
-        <os><family>mac</family></os>
-      </activation>
-      <properties>
-         <jdk.version>1.7.0</jdk.version>
-      </properties>
-    </profile>
     <profile>
       <id>default</id>
       <activation>

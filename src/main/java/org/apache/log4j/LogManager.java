@@ -40,7 +40,11 @@ import java.util.Enumeration;
  * default intialization procedure</a> is described in the <a
  * href="../../../../manual.html#defaultInit">short log4j manual</a>.
  *
- * @author Ceki G&uuml;lc&uuml; */
+ * @author Ceki G&uuml;lc&uuml; 
+ * @ Eric read: 2014/8/18 
+ * 
+ **/
+
 public class LogManager {
 
   /**
