@@ -343,6 +343,7 @@ public class DailyRollingFileAppender extends FileAppender {
    * <p>Before actually logging, this method will check whether it is
    * time to do a rollover. If it is, it will schedule the next
    * rollover time and then rollover.
+   * 日志轮转是靠的每次打日志的时候都去检查一下是否需要roll，然后采取相关操作
    * */
   protected void subAppend(LoggingEvent event) {
     long n = System.currentTimeMillis();

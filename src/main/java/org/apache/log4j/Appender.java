@@ -24,6 +24,7 @@ import org.apache.log4j.spi.LoggingEvent;
 /**
    Implement this interface for your own strategies for outputting log
    statements.
+          指定日志输出的处理方法或策略
 
    @author Ceki G&uuml;lc&uuml; 
 */
@@ -43,7 +44,6 @@ public interface Appender {
      @return the head Filter or null, if no Filters are present
      @since 1.1
   */
-  public
   Filter getFilter();
 
   /**
@@ -51,7 +51,6 @@ public interface Appender {
      
      @since 0.9.0
    */
-  public
   void clearFilters();
 
   /**
@@ -62,21 +61,18 @@ public interface Appender {
 
      @since 0.8.4
   */
-  public
   void close();
   
   /**
      Log in <code>Appender</code> specific way. When appropriate,
      Loggers will call the <code>doAppend</code> method of appender
      implementations in order to log. */
-  public
   void doAppend(LoggingEvent event);
 
 
   /**
      Get the name of this appender. The name uniquely identifies the
      appender.  */
-  public
   String getName();
 
 
@@ -85,7 +81,6 @@ public interface Appender {
 
      @since 0.9.0
    */
-  public
   void setErrorHandler(ErrorHandler errorHandler);
 
   /**
@@ -93,7 +88,6 @@ public interface Appender {
 
      @since 1.1
    */
-  public
   ErrorHandler getErrorHandler();
 
   /**
@@ -101,7 +95,6 @@ public interface Appender {
 
      @since 0.8.1
   */
-  public
   void setLayout(Layout layout);
 
   /**
@@ -109,7 +102,6 @@ public interface Appender {
      
      @since 1.1
   */
-  public
   Layout getLayout();
   
 
@@ -119,7 +111,6 @@ public interface Appender {
 
      @since 0.8.1
   */
-  public
   void setName(String name);
 
   /**
@@ -137,6 +128,5 @@ public interface Appender {
      the appender should return <code>true</code>.
      
      @since 0.8.4 */
-  public
   boolean requiresLayout();
 }

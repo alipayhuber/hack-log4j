@@ -22,6 +22,7 @@ package org.apache.log4j;
 import org.apache.log4j.helpers.AppenderAttachableImpl;
 import org.apache.log4j.spi.AppenderAttachable;
 import org.apache.log4j.spi.LoggingEvent;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import java.text.MessageFormat;
 
@@ -49,6 +50,7 @@ import java.util.Map;
  * <b>Important note:</b> The <code>AsyncAppender</code> can only be script
  * configured using the {@link org.apache.log4j.xml.DOMConfigurator}.
  * </p>
+ * 异步日志输出方式主要采用的是单独一个线程处理日志事件，其只能配置为xml的形式
  *
  * @author Ceki G&uuml;lc&uuml;
  * @author Curt Arnold

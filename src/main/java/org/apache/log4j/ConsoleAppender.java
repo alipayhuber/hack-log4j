@@ -31,6 +31,8 @@ import org.apache.log4j.helpers.LogLog;
   * @since 1.1 */
 public class ConsoleAppender extends WriterAppender {
 
+	
+  // 定义部分使用到的常量， 然后下面成员变量可以用其赋初始值
   public static final String SYSTEM_OUT = "System.out";
   public static final String SYSTEM_ERR = "System.err";
 

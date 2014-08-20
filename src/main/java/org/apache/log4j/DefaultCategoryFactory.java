@@ -19,6 +19,7 @@ package org.apache.log4j;
 
 import org.apache.log4j.spi.LoggerFactory;
 
+// 一个最简单的原型工厂类
 class DefaultCategoryFactory implements LoggerFactory {
     
   DefaultCategoryFactory() {

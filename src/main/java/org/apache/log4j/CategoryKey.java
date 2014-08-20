@@ -37,7 +37,11 @@ class CategoryKey {
   int hashCode() {
     return hashCache;
   }
-
+  
+  /**
+   * 这是很通用的equals方法的重写方式
+   * 
+   */
   final
   public
   boolean equals(Object rArg) {

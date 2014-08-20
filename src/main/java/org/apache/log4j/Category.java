@@ -80,6 +80,7 @@ import java.util.ResourceBundle;
   * <p>
   * See the document entitled <a href="http://www.qos.ch/logging/preparingFor13.html">preparing
   *  for log4j 1.3</a> for a more detailed discussion.
+  *  已被废弃，优先采用Logger类
   *
   * @author Ceki G&uuml;lc&uuml;
   * @author Anders Kristensen 

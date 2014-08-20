@@ -28,6 +28,7 @@ package org.apache.log4j;
    <p>For file based configuration see {@link
    PropertyConfigurator}. For XML based configuration see {@link
    org.apache.log4j.xml.DOMConfigurator DOMConfigurator}.
+          提供简单的配置类用于将日志输出到控制台
 
    @since 0.8.1
    @author Ceki G&uuml;lc&uuml; */

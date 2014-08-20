@@ -31,7 +31,8 @@ import org.apache.log4j.helpers.LogLog;
  *  
  *  This class provides the code for common functionality, such as
  *  support for threshold filtering and support for general filters.
- *
+ *	可以学习这种方式，相当于先弄一个骨架(模板)类，然后子类都只需要实现特定的方法逻辑即可，
+ *	减少直接继承接口类导致所有方法都需实现一遍
  * @since 0.8.1
  * @author Ceki G&uuml;lc&uuml; 
  * */
