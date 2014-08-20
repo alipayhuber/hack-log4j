@@ -37,6 +37,8 @@ import org.apache.log4j.helpers.ThreadLocalMap;
    will always return empty values but otherwise will not affect or
    harm your application.
    
+   MDC和NDC非常相似，所不同的是MDC内部使用了类似map的机制来存储信息，上下文信息也是每个线程独立地储存，
+         所不同的是信息都是以它们的key值存储在”map”中。
    @since 1.2
 
    @author Ceki G&uuml;lc&uuml; */

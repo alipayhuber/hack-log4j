@@ -22,7 +22,7 @@ import org.apache.log4j.spi.LoggingEvent;
 
 /**
    Extend this abstract class to create your own log layout format.
-   
+          日志内容布局抽象类
    @author Ceki G&uuml;lc&uuml;
 
 */

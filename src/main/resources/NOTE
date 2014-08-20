@@ -1,0 +1,8 @@
+{@link Ojbect  #setBuffer}   引入了这个类， 直接类名，否则全路径
+<p>
+<b>
+<em>
+<code>
+接口方法不用加public， 接口常量也不用加public static final
+需要子类或同包访问的方法或成员变量可以申明为protected
+

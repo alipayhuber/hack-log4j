@@ -94,6 +94,9 @@ import org.apache.log4j.helpers.LogLog;
    #cloneStack cloneStack} method and pass the reference to any other
    thread, in particular to a child.
    
+   NDC 为每一个线程管理一个堆栈。开发人员可以在代码中合适的位置嵌入简单的 push 和 pop 方法，
+          用来维护堆栈。通常 push 进堆栈的是可以唯一标示客户的上下文信息，如 SessionID 或者客户名称，IP 地址等。
+   
    @author Ceki G&uuml;lc&uuml;
    @since 0.7.0
   

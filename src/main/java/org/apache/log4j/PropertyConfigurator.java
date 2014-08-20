@@ -380,6 +380,7 @@ public class PropertyConfigurator implements Configurator {
      modified. The period is determined by the <code>delay</code>
      argument. If a change or file creation is detected, then
      <code>configFilename</code> is read to configure log4j.
+                可以调用这个静态方法，实现日志内容定时刷新功能，避免重启应用
 
       @param configFilename A file in key=value format.
       @param delay The delay in milliseconds to wait between each check.

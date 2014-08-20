@@ -78,6 +78,7 @@ public class LogManager {
   static private Object guard = null;
   static private RepositorySelector repositorySelector;
 
+  // 静态代码块完成配置文件加载和日志运行基础环境初始化
   static {
     // By default we use a DefaultRepositorySelector which always returns 'h'.
     Hierarchy h = new Hierarchy(new RootLogger((Level) Level.DEBUG));
