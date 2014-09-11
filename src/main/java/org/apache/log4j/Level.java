@@ -33,6 +33,7 @@ import java.io.Serializable;
 
    <p>The <code>Level</code> class may be subclassed to define a larger
    level set.
+           级别高低定义：ALL<DEBUG<WARN<INFO<ERROR<FATAL<OFF
 
    @author Ceki G&uuml;lc&uuml;
 

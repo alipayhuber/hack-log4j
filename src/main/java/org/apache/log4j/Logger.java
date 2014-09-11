@@ -22,6 +22,10 @@ import org.apache.log4j.Level;
 
 
 /**
+ * 常声明为static final类型
+ * 
+ * Logger.getLogger("com.facebook.X")   Logger.getLogger(X.class.getName())
+ * Logger.getLogger(X.class)
   This is the central class in the log4j package. Most logging
   operations, except configuration, are done through this class.
 
@@ -31,6 +35,7 @@ import org.apache.log4j.Level;
 public class Logger extends Category {
 
   /**
+   * 类全路径名称
      The fully qualified name of the Logger class. See also the
      getFQCN method. */
   private static final String FQCN = Logger.class.getName();
@@ -206,7 +211,8 @@ public class Logger extends Category {
         if (repository.isDisabled(Level.TRACE_INT)) {
             return false;
           }
-
+        // 为确保所有Logger都有一个Level(不管是从最近祖先继承的，还是自己定义的)， 
+        // RootLogger的Level不允许为空， 并且只能通过Logger.getRootLogger获取
           return Level.TRACE.isGreaterOrEqual(this.getEffectiveLevel());
     }
 

@@ -40,7 +40,11 @@ public class BasicConfigurator {
   /**
      Add a {@link ConsoleAppender} that uses {@link PatternLayout}
      using the {@link PatternLayout#TTCC_CONVERSION_PATTERN} and
-     prints to <code>System.out</code> to the root category.  */
+     prints to <code>System.out</code> to the root category.  
+                指定一个默认的输出位置和输出格式，完成最基本的配置. 
+                相当于通过硬编码的方式可以完成配置文件的效果
+   */
+  
   static
   public
   void configure() {

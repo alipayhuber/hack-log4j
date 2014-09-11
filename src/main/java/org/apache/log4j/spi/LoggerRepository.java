@@ -50,7 +50,9 @@ public interface LoggerRepository {
   /**
      Set the repository-wide threshold. All logging requests below the
      threshold are immediately dropped. By default, the threshold is
-     set to <code>Level.ALL</code> which has the lowest possible rank.  */
+     set to <code>Level.ALL</code> which has the lowest possible rank.  
+                不管Logger是否设置了Level，如果一旦发现其级别低于这个门限级别，都将失效
+    */
   public
   void setThreshold(Level level);
 

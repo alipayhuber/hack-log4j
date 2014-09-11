@@ -130,7 +130,9 @@ public class Category implements AppenderAttachable {
       ancestors of this category are not used. However, the children
       of this category will inherit its appenders, unless the children
       have their additivity flag set to <code>false</code> too. See
-      the user manual for more details. */
+      the user manual for more details. 
+      默认为true，设置为false则不按照logger的继承机制来做
+      */
   protected boolean additive = true;
 
   /**
